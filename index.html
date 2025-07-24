@@ -1,0 +1,67 @@
+<head>
+    <script src="scriptcopy.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>KML Polygon Generator</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="content">
+        <div class="help-button attention" onclick="toggleHelp()">?</div>
+        <div class="help-popup" id="helpPopup">
+        <div class="help-content">
+        <span class="close-button" onclick="toggleHelp()">×</span>
+        <h3>How to use</h3>
+        <b>Welcome to the NIQUE INC KML Polygon Generator!</b>
+        <p>Only regular polygons can be generated. The origin point is the center of the polygon, the radius is the distance from the center to all the points. </p>
+        <p>To use the generated KML file, go to <a href="https://www.google.com/maps/d/" target="_blank" style="color: #1E90FF;">Google My Maps</a>, create a new map, then import the file.</p>
+        <p>Here is some example coordinates, to test the application. It's right on top of the school.</p>
+        <p>-33.82958659697679, 151.24345000646812</p>
+    </div>
+</div>
+        <h1 class= "title">KML Polygon Generator</h1>
+
+        <br></br>
+
+        
+
+        <h2 class="req">Polygon Name</h2>
+        <input type="text" id="name" name="name" class="input">
+
+        <br></br>
+
+        <h2 class="req"> Origin Point</h2>
+        <input type="text" id="origin" name="origin" class="input">
+
+        <br></br>
+
+        <h2 class="req"> Amount of sides </h2>
+        <input type="text" id="sides" name="sides" class="input">
+
+        <br></br>
+
+        <h2 class="req"> Radius </h2>
+        <input type="text" id="radius" name="radius" class="input">
+
+        <br></br>
+
+        <h2 class="req"> Rotation </h2>
+        <input type="text" id="rotation" name="rotation" class="input">
+
+        <br></br>
+        <br></br>
+
+        <button id="addbutton" onclick="addToFile()">Add Polygon to file</button>
+
+        <br></br>
+        <pre  id = "FileDisplay"></pre>
+
+        <br></br>
+
+        <button id="clearButton" onclick="clearFile()">Clear File</button>
+
+        <br></br>
+
+
+        <button id="downloadbutton" onclick="download()">Download KML</button>
+    </div>
+</body>

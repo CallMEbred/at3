@@ -1,0 +1,202 @@
+body {
+    background-image: url("bg2.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    position: relative; 
+    background: rgb(107, 109, 122);
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(201,212,255);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+
+.input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 19px;
+    border-radius: 100px;
+    background: rgb(62, 64, 74);
+}
+
+#addbutton, #downloadbutton{
+    cursor: pointer;
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    font-size: 19px;
+    border-radius: 10px;
+    background: rgb(62, 64, 74);;
+    color: rgb(201,212,255);
+    transition: transform 300ms;
+}
+
+#addbutton:hover {
+    background: rgb(40, 47, 77);
+    transform: scale(1.1);
+}
+#downloadbutton:hover {
+    background: rgb(40, 47, 77);
+    transform: scale(1.1);
+}
+
+#FileDisplay {
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    padding: 10px;
+    background-color: rgba(72,81,117,0.4);
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.help-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+    background: rgb(62, 64, 74);
+    color: rgb(201,212,255);
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.help-button:hover {
+    background: rgb(40, 47, 77);
+    transition: 200ms;
+}
+
+.help-popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%); 
+    background-color: rgb(73, 74, 84);
+    padding: 30px;
+    border-radius: 15px;
+    color: rgb(201,212,255);
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    z-index: 2000;
+    font-family: Arial;
+    text-align: left;
+}
+
+.help-content .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 32px; 
+    color: rgb(201,212,255);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#clearbutton {
+    cursor: pointer;
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    font-size: 19px;
+    border-radius: 10px;
+    background: rgb(193, 60, 60);;
+    color: rgb(255, 255, 255);
+    transition: transform 300ms;
+}
+
+#clearbutton:hover {
+    transform: scale(0.9);
+    background: rgb(146, 44, 44);;
+}
+
+.filediv {
+    background-color: rgba(101, 114, 163, 0.4);
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+  
+
+.removebutton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgb(193, 60, 60);;
+    color: rgb(255, 255, 255);
+    transition: transform 300ms;
+    margin-top: 10px;
+  padding: 5px 12px;
+}
+
+.removebutton:hover {
+    transform: scale(0.9);
+    background: rgb(146, 44, 44);;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.help-button.attention {
+    animation: pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes kirkirkir {
+    0% { background-color: red; }
+    1% { opacity: 100%; }
+    99% { opacity: 0%; }
+    100% { display: none; }
+}
